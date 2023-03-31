@@ -1,0 +1,12 @@
+money = int(input("Сумма, которую планируете положить под проценты: "))
+tkb = int(money * 5.6 / 100)
+skb = int(money * 5.9 / 100)
+vtb = int(money * 4.28 / 100)
+sber = int(money * 4.0 / 100)
+
+per_sent = {tkb: 5.6, skb: 5.9, vtb: 4.28, sber: 4.0}
+deposit = list(per_sent)
+print("Депозит - ", deposit)
+
+deposit_max = max(list(deposit))
+print("Максимальная сумма, которую вы можете заработать -", deposit_max)
